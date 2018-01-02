@@ -1,17 +1,250 @@
-<ion-header>
+<ion-header class="navbar">
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-buttons left>
+      <button class="btn-back" ion-button (click)="doYourStuff()">
+        <ion-icon class="customIcon" name="arrow-back"> Back</ion-icon>
+      </button>
+    </ion-buttons>
+    <div class="logo-header">
+      <img src="http://24gocheck.com/image/catalog/24gocheck%20Icons/MockUI/24go%20check.png" alt="">
+    </div>
+    <ion-buttons right>
+      <button class="btn-back" ion-button (click)="doYourStuff()">
+        <ion-icon class="ion-ios-search" name=""></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+    <ion-slides class="slide-banner" autoplay="5000" loop="true" speed="3000">
+      <ion-slide class="img-slide" *ngFor="let image of ImageArray">
+        <img src="{{image.image}}" alt="">
+      </ion-slide>
+    </ion-slides>
+    <ion-scroll scrollX="true" style="white-space: nowrap; height: 200px;">
+      <ul class="row home-category-grid-icons" id="iconSlide">
+        <li>
+          <a style="min-height: 60px; margin-left: 0; margin-right: 0;" class="col">
+            <div class="parent-background">
+              <div class="background-opacity">
+                <div class="cat-name">
+                  <span>Du Lịch</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a style="min-height: 60px; margin-left: 0; margin-right: 0;" class="col">
+            <div class="parent-background">
+              <div class="background-opacity">
+                <div class="cat-name">
+                  <span>Du Lịch</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a style="min-height: 60px; margin-left: 0; margin-right: 0;" class="col">
+            <div class="parent-background">
+              <div class="background-opacity">
+                <div class="cat-name">
+                  <span>Du Lịch</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a style="min-height: 60px; margin-left: 0; margin-right: 0;" class="col">
+            <div class="parent-background">
+              <div class="background-opacity">
+                <div class="cat-name">
+                  <span>Du Lịch</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a style="min-height: 60px; margin-left: 0; margin-right: 0;" class="col">
+            <div class="parent-background">
+              <div class="background-opacity">
+                <div class="cat-name">
+                  <span>Du Lịch</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a style="min-height: 60px; margin-left: 0; margin-right: 0;" class="col">
+            <div class="parent-background">
+              <div class="background-opacity">
+                <div class="cat-name">
+                  <span>Du Lịch</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a style="min-height: 60px; margin-left: 0; margin-right: 0;" class="col">
+            <div class="parent-background">
+              <div class="background-opacity">
+                <div class="cat-name">
+                  <span>Du Lịch</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a style="min-height: 60px; margin-left: 0; margin-right: 0;" class="col">
+            <div class="parent-background">
+              <div class="background-opacity">
+                <div class="cat-name">
+                  <span>Du Lịch</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </ion-scroll>
+  <ion-list style="margin: -65px 0 32px;">
+    <h1>Gian Hàng</h1>
+    <ion-item-sliding>
+      <ion-item style="height: 80px;">
+        <ion-avatar item-start>
+          <img style="height: 80px;width: 80px;" src="../../assets/imgs/brand.gif"/>
+        </ion-avatar>
+        <h1>Barcelona</h1>
+        <p>Barcelona Football Club in Spain</p>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="primary" style="width: 70px">
+          <ion-icon name="map"></ion-icon>
+          Maps
+        </button>
+        <button ion-button color="danger" style="width: 70px">
+          <ion-icon name="basket"></ion-icon>
+          Detail
+        </button>
+        <button ion-button color="secondary" style="width: 70px">
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item style="height: 80px;">
+        <ion-avatar item-start>
+          <img style="height: 80px;width: 80px;" src="../../assets/imgs/brand.gif"/>
+        </ion-avatar>
+        <h1>Barcelona</h1>
+        <p>Barcelona Football Club in Spain</p>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="primary" style="width: 70px">
+          <ion-icon name="map"></ion-icon>
+          Maps
+        </button>
+        <button ion-button color="danger" style="width: 70px">
+          <ion-icon name="basket"></ion-icon>
+          Detail
+        </button>
+        <button ion-button color="secondary" style="width: 70px">
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item style="height: 80px;">
+        <ion-avatar item-start>
+          <img style="height: 80px;width: 80px;" src="../../assets/imgs/brand.gif"/>
+        </ion-avatar>
+        <h1>Barcelona</h1>
+        <p>Barcelona Football Club in Spain</p>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="primary" style="width: 70px">
+          <ion-icon name="map"></ion-icon>
+          Maps
+        </button>
+        <button ion-button color="danger" style="width: 70px">
+          <ion-icon name="basket"></ion-icon>
+          Detail
+        </button>
+        <button ion-button color="secondary" style="width: 70px">
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item style="height: 80px;">
+        <ion-avatar item-start>
+          <img style="height: 80px;width: 80px;" src="../../assets/imgs/brand.gif"/>
+        </ion-avatar>
+        <h1>Barcelona</h1>
+        <p>Barcelona Football Club in Spain</p>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="primary" style="width: 70px">
+          <ion-icon name="map"></ion-icon>
+          Maps
+        </button>
+        <button ion-button color="danger" style="width: 70px">
+          <ion-icon name="basket"></ion-icon>
+          Detail
+        </button>
+        <button ion-button color="secondary" style="width: 70px">
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item style="height: 80px;">
+        <ion-avatar item-start>
+          <img style="height: 80px;width: 80px;" src="../../assets/imgs/brand.gif"/>
+        </ion-avatar>
+        <h1>Barcelona</h1>
+        <p>Barcelona Football Club in Spain</p>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="primary" style="width: 70px">
+          <ion-icon name="map"></ion-icon>
+          Maps
+        </button>
+        <button ion-button color="danger" style="width: 70px">
+          <ion-icon name="basket"></ion-icon>
+          Detail
+        </button>
+        <button ion-button color="secondary" style="width: 70px">
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item style="height: 80px;">
+        <ion-avatar item-start>
+          <img style="height: 80px;width: 80px;" src="../../assets/imgs/brand.gif"/>
+        </ion-avatar>
+        <h1>Barcelona</h1>
+        <p>Barcelona Football Club in Spain</p>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="primary" style="width: 70px">
+          <ion-icon name="map"></ion-icon>
+          Maps
+        </button>
+        <button ion-button color="danger" style="width: 70px">
+          <ion-icon name="basket"></ion-icon>
+          Detail
+        </button>
+        <button ion-button color="secondary" style="width: 70px">
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>

@@ -1,8 +1,6 @@
 {
-  "name": "ionic3-24gocheck",
+  "name": "appIonic3",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {
-    "cordova": {}
-  }
+  "integrations": {}
 }

@@ -7,8 +7,14 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  ImageArray: any = [];
 
+  constructor(public navCtrl: NavController) {
+      this.ImageArray = [
+        {'image':'../../assets/imgs/GUCCI-eyewear-banner1.jpg'},
+        {'image':'../../assets/imgs/hm-philippines-10142013.jpg'},
+        {'image':'../../assets/imgs/Zara-Banner.jpg'}
+        ]
   }
 
 }
