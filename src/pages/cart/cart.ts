@@ -10,10 +10,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-detail',
-  templateUrl: 'detail.html',
+  selector: 'page-cart',
+  templateUrl: 'cart.html',
 })
-export class DetailPage {
+export class CartPage {
 
   ImageArray: any = [];
   constructor(public navCtrl: NavController) {
