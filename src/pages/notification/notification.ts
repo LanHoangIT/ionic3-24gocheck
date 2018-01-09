@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {Platform} from 'ionic-angular';
 
 @Component({
   selector: 'page-noti',
   templateUrl: 'notification.html'
 })
 export class NotiPage {
-
-  constructor(public navCtrl: NavController) {
-
+  noti: string = "event";
+  isAndroid: boolean = false;
+  constructor(platform: Platform) {
+    this.isAndroid = platform.is('android');
   }
 
 }

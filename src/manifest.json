@@ -6,7 +6,7 @@
   "icons": [{
     "src": "assets/imgs/logo.png",
     "sizes": "512x512",
-    "type": "image/png"
+    "type": "logo/png"
   }],
   "background_color": "#4e8ef7",
   "theme_color": "#4e8ef7"
