@@ -1,14 +1,21 @@
-page-shop-detail {
+page-cart {
 
 }
 .toolbar-title-ios{
-   color: white;
- }
-
-.toolbar-title-md{
-  color: white;
+  color: white !important;
 }
-
+.toolbar-title-md{
+  color: white !important;
+}
+.title-user{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 90px 1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
 .img-slide{
   height: 43%;
 }
@@ -22,11 +29,13 @@ page-shop-detail {
 .btn-span{
   font-size: 22px;
   margin-left: 5px;
+  color: white;
+  text-decoration: none;
 }
 .title-product{
   color: #222222;
   text-align: left;
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -43,5 +52,3 @@ page-shop-detail {
   font-size: 13px;
   text-decoration: none;
 }
-
-
