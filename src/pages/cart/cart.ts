@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { NgModule } from '@angular/core';
+import { IonicPageModule } from 'ionic-angular';
 
 /**
  * Generated class for the DetailPage page.
@@ -8,20 +8,14 @@ import { IonicPage, NavController } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
-@Component({
-  selector: 'page-cart',
-  templateUrl: 'cart.html',
+@NgModule({
+  declarations: [
+    CartPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(CartPage),
+  ],
 })
 export class CartPage {
-
-  ImageArray: any = [];
-  constructor(public navCtrl: NavController) {
-    this.ImageArray = [
-      {'image':'../../assets/imgs/GUCCI-eyewear-banner1.jpg'},
-      {'image':'../../assets/imgs/hm-philippines-10142013.jpg'},
-      {'image':'../../assets/imgs/Zara-Banner.jpg'}
-    ]
-  }
 
 }
