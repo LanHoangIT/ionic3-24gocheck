@@ -17,11 +17,8 @@
 </ion-header>
 
 <ion-content>
-    <ion-slides class="slide-banner" autoplay="5000" loop="true" speed="3000">
-      <ion-slide class="img-slide" *ngFor="let image of ImageArray">
-        <img src="{{image.image}}" alt="">
-      </ion-slide>
-    </ion-slides>
+
+  <slider></slider>
     <ion-scroll scrollX="true" style="white-space: nowrap; height: 200px;">
       <ul class="row home-category-grid-icons" id="iconSlide">
         <li>
@@ -102,149 +99,53 @@
     </ion-scroll>
   <ion-list style="margin: -65px 0 32px;">
     <h1>Gian Hàng</h1>
-    <ion-item-sliding>
-      <ion-item style="height: 80px;">
-        <ion-avatar item-start>
-          <img style="height: 80px;width: 80px;" src="../../assets/imgs/brand.gif"/>
-        </ion-avatar>
-        <h1>Barcelona</h1>
-        <p>Barcelona Football Club in Spain</p>
-      </ion-item>
-
-      <ion-item-options side="right">
-        <button ion-button color="primary" style="width: 70px">
-          <ion-icon name="map"></ion-icon>
-          Maps
-        </button>
-        <button ion-button color="danger" style="width: 70px">
-          <ion-icon name="basket"></ion-icon>
-          Detail
-        </button>
-        <button ion-button color="secondary" style="width: 70px">
-          <ion-icon name="call"></ion-icon>
-          Call
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item style="height: 80px;">
-        <ion-avatar item-start>
-          <img style="height: 80px;width: 80px;" src="../../assets/imgs/brand.gif"/>
-        </ion-avatar>
-        <h1>Barcelona</h1>
-        <p>Barcelona Football Club in Spain</p>
-      </ion-item>
-
-      <ion-item-options side="right">
-        <button ion-button color="primary" style="width: 70px">
-          <ion-icon name="map"></ion-icon>
-          Maps
-        </button>
-        <button ion-button color="danger" style="width: 70px">
-          <ion-icon name="basket"></ion-icon>
-          Detail
-        </button>
-        <button ion-button color="secondary" style="width: 70px">
-          <ion-icon name="call"></ion-icon>
-          Call
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item style="height: 80px;">
-        <ion-avatar item-start>
-          <img style="height: 80px;width: 80px;" src="../../assets/imgs/brand.gif"/>
-        </ion-avatar>
-        <h1>Barcelona</h1>
-        <p>Barcelona Football Club in Spain</p>
-      </ion-item>
-
-      <ion-item-options side="right">
-        <button ion-button color="primary" style="width: 70px">
-          <ion-icon name="map"></ion-icon>
-          Maps
-        </button>
-        <button ion-button color="danger" style="width: 70px">
-          <ion-icon name="basket"></ion-icon>
-          Detail
-        </button>
-        <button ion-button color="secondary" style="width: 70px">
-          <ion-icon name="call"></ion-icon>
-          Call
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item style="height: 80px;">
-        <ion-avatar item-start>
-          <img style="height: 80px;width: 80px;" src="../../assets/imgs/brand.gif"/>
-        </ion-avatar>
-        <h1>Barcelona</h1>
-        <p>Barcelona Football Club in Spain</p>
-      </ion-item>
-
-      <ion-item-options side="right">
-        <button ion-button color="primary" style="width: 70px">
-          <ion-icon name="map"></ion-icon>
-          Maps
-        </button>
-        <button ion-button color="danger" style="width: 70px">
-          <ion-icon name="basket"></ion-icon>
-          Detail
-        </button>
-        <button ion-button color="secondary" style="width: 70px">
-          <ion-icon name="call"></ion-icon>
-          Call
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item style="height: 80px;">
-        <ion-avatar item-start>
-          <img style="height: 80px;width: 80px;" src="../../assets/imgs/brand.gif"/>
-        </ion-avatar>
-        <h1>Barcelona</h1>
-        <p>Barcelona Football Club in Spain</p>
-      </ion-item>
-
-      <ion-item-options side="right">
-        <button ion-button color="primary" style="width: 70px">
-          <ion-icon name="map"></ion-icon>
-          Maps
-        </button>
-        <button ion-button color="danger" style="width: 70px">
-          <ion-icon name="basket"></ion-icon>
-          Detail
-        </button>
-        <button ion-button color="secondary" style="width: 70px">
-          <ion-icon name="call"></ion-icon>
-          Call
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item style="height: 80px;">
-        <ion-avatar item-start>
-          <img style="height: 80px;width: 80px;" src="../../assets/imgs/brand.gif"/>
-        </ion-avatar>
-        <h1>Barcelona</h1>
-        <p>Barcelona Football Club in Spain</p>
-      </ion-item>
-
-      <ion-item-options side="right">
-        <button ion-button color="primary" style="width: 70px">
-          <ion-icon name="map"></ion-icon>
-          Maps
-        </button>
-        <button ion-button color="danger" style="width: 70px">
-          <ion-icon name="basket"></ion-icon>
-          Detail
-        </button>
-        <button ion-button color="secondary" style="width: 70px">
-          <ion-icon name="call"></ion-icon>
-          Call
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <img (click)="onGoToDetailUser()" src="../../assets/imgs/bag.jpg" height="150"/>
+          <ion-row>
+            <ion-col col-9 style="border-right:1px solid #82603c">
+              <ion-title><h2 class="title-product">Jacket Men Leather</h2></ion-title>
+              <span>{{"169 Nguyễn Ngọc Vũ - Trung Hòa - Cầu Giấy - Hà Nội".slice(0,15).concat("...")}}</span>
+              <a class="order-product" style="color: red;" href="#">Xem Chi Tiết</a>
+            </ion-col>
+            <ion-col col-3><p>1<span style="color: red">SP</span></p></ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col col-6>
+          <img src="../../assets/imgs/bag2.jpg" height="150"/>
+          <ion-row>
+            <ion-col col-9 style="border-right:1px solid #82603c">
+              <ion-title><h2 class="title-product">Jacket Men Leather</h2></ion-title>
+              <span>{{"169 Nguyễn Ngọc Vũ - Trung Hòa - Cầu Giấy - Hà Nội".slice(0,15).concat("...")}}</span>
+              <a class="order-product" style="color: red;" href="#">Xem Chi Tiết</a>
+            </ion-col>
+            <ion-col col-3><p>1<span style="color: red">SP</span></p></ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col col-6>
+          <img src="../../assets/imgs/bag2.jpg" height="150"/>
+          <ion-row>
+            <ion-col col-9 style="border-right:1px solid #82603c">
+              <ion-title><h2 class="title-product">Jacket Men Leather</h2></ion-title>
+              <span>{{"169 Nguyễn Ngọc Vũ - Trung Hòa - Cầu Giấy - Hà Nội".slice(0,15).concat("...")}}</span>
+              <a class="order-product" style="color: red;" href="#">Xem Chi Tiết</a>
+            </ion-col>
+            <ion-col col-3><p>1<span style="color: red">SP</span></p></ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col col-6>
+          <img src="../../assets/imgs/bag.jpg" height="150"/>
+          <ion-row>
+            <ion-col col-9 style="border-right:1px solid #82603c">
+              <ion-title><h2 class="title-product">Jacket Men Leather</h2></ion-title>
+              <span>{{"169 Nguyễn Ngọc Vũ - Trung Hòa - Cầu Giấy - Hà Nội".slice(0,15).concat("...")}}</span>
+              <a class="order-product" style="color: red;" href="#">Xem Chi Tiết</a>
+            </ion-col>
+            <ion-col col-3><p>1<span style="color: red">SP</span></p></ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-list>
 </ion-content>

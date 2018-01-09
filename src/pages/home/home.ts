@@ -1,20 +1,20 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import {ShopDetailPage} from "../shop-detail/shop-detail";
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
 
-  ImageArray: any = [];
-
+  // pageShopDetail: page = ShopDetailPage;
   constructor(public navCtrl: NavController) {
-      this.ImageArray = [
-        {'image':'../../assets/imgs/GUCCI-eyewear-banner1.jpg'},
-        {'image':'../../assets/imgs/hm-philippines-10142013.jpg'},
-        {'image':'../../assets/imgs/Zara-Banner.jpg'}
-        ]
+
+  }
+  onGoToDetailUser(){
+    this.navCtrl.push(ShopDetailPage);
   }
 
 }
