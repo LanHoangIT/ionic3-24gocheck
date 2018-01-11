@@ -10,7 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-// import {CartPage} from "../pages/cart/cart";
+import {CartPage} from "../pages/cart/cart";
 import {AccountPage} from "../pages/account/account";
 import {ProductDetailPage} from "../pages/product-detail/product-detail";
 import {SliderComponent} from "../components/slider/slider";
@@ -24,7 +24,7 @@ import {ShopDetailPage} from "../pages/shop-detail/shop-detail";
     SearchPage,
     NotiPage,
     HomePage,
-    // CartPage,
+    CartPage,
     AccountPage,
     ShopDetailPage,
     ProductDetailPage,
@@ -41,7 +41,7 @@ import {ShopDetailPage} from "../pages/shop-detail/shop-detail";
     SearchPage,
     NotiPage,
     HomePage,
-    // CartPage,
+    CartPage,
     AccountPage,
     ShopDetailPage,
     ProductDetailPage,

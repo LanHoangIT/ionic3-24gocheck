@@ -1,11 +1,60 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Search
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+<ion-searchbar style="border-radius: 10px;" mode="ios"></ion-searchbar>
+  <!--<ion-list>-->
+    <!--<ion-item *ngFor="let item of items" hideWhen="items">-->
+      <!--{{item}}-->
+    <!--</ion-item>-->
+  <!--</ion-list>-->
+  <div>
 
+  </div>
+  <div padding-top="10px">
+    <ion-segment [(ngModel)]="searchBy">
+      <ion-segment-button value="near">
+        Near By
+      </ion-segment-button>
+      <ion-segment-button value="category">
+        Category
+      </ion-segment-button>
+      <ion-segment-button value="city">
+        Cities
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <div [ngSwitch]="searchBy">
+    <ion-list *ngSwitchCase="'near'">
+      <div style="font-size: 16px;">
+        <div style="margin: 20% 20% 0 20%">
+          <img style="background: transparent; width: 150%;" src="http://24gocheck.com/image/catalog/24gocheck%20Icons/bell.png"/>
+        </div>
+        <p class="list-none">You don't have Notification</p>
+      </div>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'category'">
+      <div style="font-size: 16px;">
+        <div style="margin: 20% 20% 0 20%">
+          <img style="background: transparent; width: 150%;" src="http://24gocheck.com/image/catalog/24gocheck%20Icons/bell.png"/>
+        </div>
+        <p class="list-none">You don't have Notification</p>
+      </div>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'city'">
+      <div style="font-size: 16px;">
+        <div style="margin: 20% 20% 0 20%">
+          <img style="background: transparent; width: 150%;" src="http://24gocheck.com/image/catalog/24gocheck%20Icons/bell.png"/>
+        </div>
+        <p class="list-none">You don't have Notification</p>
+      </div>
+    </ion-list>
+  </div>
 </ion-content>
